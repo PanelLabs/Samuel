@@ -1,2 +1,40 @@
-# Samuel
-A Node.JS library that attempts to understand what user-input means.
+# Samuel ![](http://i.imgur.com/wIXje5r.png)
+
+**Samuel** is a Node library that attempts to understand what user-input means.
+
+# Abstract
+
+Samuel is a library intended to be used when parsing speech given to an artificial intelligence. The library uses regular-expressions to
+detect identifying characteristics such as currency, age, questions, interrogative words, and names.
+
+# Details
+
+## Currency
+
+* Status: Unimplemented
+* Date Started: Sun, May 8 2016
+* Date Finished: N/A
+
+## Age
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A
+
+## Questions
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A
+
+## Interrogative Words
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A
+
+## Names
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A

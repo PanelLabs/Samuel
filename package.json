@@ -1,0 +1,29 @@
+{
+  "name": "samuel-ai",
+  "version": "0.1.0",
+  "description": "library that attempts to understand what user-input means",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PanelLabs/Samuel.git"
+  },
+  "keywords": [
+    "ai",
+    "samuel",
+    "panel",
+    "labs",
+    "robot",
+    "learning",
+    "machine",
+    "reading",
+    "input"
+  ],
+  "author": "Danilo Lekovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PanelLabs/Samuel/issues"
+  }
+}
