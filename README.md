@@ -38,3 +38,21 @@ detect identifying characteristics such as currency, age, questions, interrogati
 * Status: Unimplemented
 * Date Started: N/A
 * Date Finished: N/A
+
+## Emails
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A
+
+## Phone Numbers
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A
+
+## Time
+
+* Status: Unimplemented
+* Date Started: N/A
+* Date Finished: N/A

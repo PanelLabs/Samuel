@@ -10,13 +10,19 @@ var samuel = {
         // Status: Implemented
         currency: /(\$|\Ƀ|\€|\£|\¥)([0-9]+[.]?[0-9][0-9])/g,
         // Status: Unimplemented
-        age: / /,
+        age: /([0-9]+)\s(years old|years of age)/gi,
         // Status: Unimplemented
-        questions: / /,
+        questions: /(what|who|where|when|why|how|can|which)/gi,
         // Status: Unimplemented
-        interrogative: / /,
+        interrogative: /("what"|"who"|"where")/,
         // Status: Unimplemented
-        names: / /
+        names: /^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/g,
+        // Status: Unimplemented
+        emails: /^(([a-zA-Z]|[0-9])|([-]|[_]|[.]))+[@](([a-zA-Z0-9])|([-])){2,63}[.](([a-zA-Z0-9]){2,63})+$/gi,
+        // Status: Unimplemented
+        phoneNumbers: /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/g,
+        // Status: Unimplemented
+        time: /(([0-9]+)\s(o'clock))|(([0-9]+)(AM|PM))|(([0-9]+):([0-9]+)((AM|PM))?)/gi
     },
 
     // Checks for specific text elements
