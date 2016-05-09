@@ -17,9 +17,9 @@ detect identifying characteristics such as currency, age, questions, interrogati
 
 ## Age
 
-* Status: Unimplemented
-* Date Started: N/A
-* Date Finished: N/A
+* Status: Implemented
+* Date Started: Sun, May 8 2016
+* Date Finished: Sun, May 8 2016 20:26
 
 ## Questions
 
