@@ -8,16 +8,16 @@ var samuel = {
     patterns: {
         // Current supported currencies: Dollar, Bitcoin, Euro, Pound, Yen
         // Status: Implemented
-        currency: /(\$|\Ƀ|\€|\£|\¥)([0-9]+[.]?[0-9][0-9])/g,
+        currency: /(\$|\Ƀ|\€|\£|\¥)([0-9]+([.][0-9][0-9])?)/g,
 
         // Status: Implemented
         age: /([0-9]+)\s(years old|years of age)/gi,
 
         // Status: Unimplemented
-        questions: /(what|who|where|when|why|how|can|which)/gi,
+        questions: /\?/g,
 
         // Status: Unimplemented
-        interrogative: /("what"|"who"|"where")/,
+        interrogative: /(what|who|where|when|why|how|can|which)/gi,
 
         // Status: Unimplemented
         names: /^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/g,
@@ -116,8 +116,17 @@ var samuel = {
             }
 
             return output;
+        },
+        // Checks for all
+        // Status: Implemented
+        all: function(str) {
+            var currencies = samuel.checks.currency(str);
+            var ages = samuel.checks.age(str);
+            var final = currencies.concat(ages);
+
+            return final;
         }
     }
 };
 
-console.log(samuel.checks.age("I am 22 years old"));
+console.log(samuel.checks.all("I am 22 years old and I have had $5 in my bank account"));
